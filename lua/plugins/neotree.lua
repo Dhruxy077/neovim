@@ -19,7 +19,7 @@ return {
 				},
 			})
 			vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "Neotree" })
-
+      vim.keymap.set("n","<leader>E",":Neotree focus<CR>",{ desc = "focuses to the Neotree"})
 			vim.keymap.set("n", "<leader>ge", function()
 				require("neo-tree.command").execute({ source = "git_status", toggle = true })
 			end, { desc = "Git Explorer" })

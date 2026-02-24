@@ -23,7 +23,7 @@ return {
 			dashboard.button("f", " " .. " Find File", "<cmd>Telescope find_files<cr>"),
 			dashboard.button("r", " " .. " Recent Projects", "<cmd>Telescope oldfiles<cr>"),
 			dashboard.button("g", " " .. " Live Grep", "<cmd>Telescope live_grep<cr>"),
-			dashboard.button("s", " " .. " Resume Session", [[<cmd>lua require("persistence").load()<cr>]]),
+			dashboard.button("s", " " .. " Resume Session", [[<cmd>lua pcall("persistence").load()<cr>]]),
 			dashboard.button("c", " " .. " Dhruvim Config", "<cmd>edit $MYVIMRC<cr>"),
 			dashboard.button("l", "󰒲 " .. " Manage Plugins", "<cmd>Lazy<cr>"),
 			dashboard.button("q", " " .. " Exit Editor", "<cmd>qa<cr>"),
