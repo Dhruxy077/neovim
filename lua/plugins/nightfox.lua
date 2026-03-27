@@ -21,16 +21,12 @@ return {
 					},
 				},
 				styles = { -- Style to be applied to different syntax groups
-					comments = "italic", -- Value is any valid attr-list value `:help attr-list`
-					conditionals = "italic",
-					constants = "italic",
-					functions = "italic",
-					keywords = "italic",
-					numbers = "italic",
-					operators = "italic",
-					strings = "italic",
+					--	tabline = { "reverse" },
+					--	search = { "italic", "reverse" },
+					--	incsearch = { "italic", "reverse" },
 					types = "italic",
-					variables = "italic",
+					keyword = "italic",
+					comment = "italic",
 				},
 				inverse = { -- Inverse highlight for different types
 					match_paren = false,

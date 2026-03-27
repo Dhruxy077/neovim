@@ -10,6 +10,7 @@ vim.keymap.set("n", "H", ":tabp<CR>", {})
 vim.keymap.set("n", "L", ":tabn<CR>", {})
 vim.keymap.set("n", "<C-t>", ":tabnew<CR>", {})
 vim.keymap.set("i","jk","<Esc>",{ noremap = true, silent = true})
+vim.keymap.set("n","<C-w>",":bdelete<CR>", {desc = "closes the tab"})
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	local lazyrepo = "https://github.com/folke/lazy.nvim.git"
