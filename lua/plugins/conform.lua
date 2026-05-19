@@ -28,23 +28,38 @@ return {
 			desc = "Format buffer",
 		},
 	},
-	config = function()
-		require("conform").setup({
-			formatters_by_ft = {
-				lua = { "stylua" },
-				python = { "isort", "black" },
-				rust = { "rustfmt", lsp_format = "fallback" },
-				-- Matches your web dev interests
-				javascript = { "prettierd", "prettier", stop_after_first = true },
-				typescript = { "prettierd", "prettier", stop_after_first = true },
-				javascriptreact = { "prettierd", "prettier", stop_after_first = true },
-				typescriptreact = { "prettierd", "prettier", stop_after_first = true },
-				-- Corrected names
-				cpp = { "clang-format" },
-				c = { "clang-format" },
-				css = { "prettierd", "prettier", stop_after_first = true },
-				html = { "prettierd", "prettier", stop_after_first = true },
-			},
-		})
-	end,
+	-- config = function()
+	-- 	require("conform").setup({
+	-- 		formatters_by_ft = {
+	-- 			lua = { "stylua" },
+	-- 			python = { "isort", "black" },
+	-- 			rust = { "rustfmt", lsp_format = "fallback" },
+	-- 			-- Matches your web dev interests
+	-- 			javascript = { "prettierd", "prettier", stop_after_first = true },
+	-- 			typescript = { "prettierd", "prettier", stop_after_first = true },
+	-- 			javascriptreact = { "prettierd", "prettier", stop_after_first = true },
+	-- 			typescriptreact = { "prettierd", "prettier", stop_after_first = true },
+	-- 			-- Corrected names
+	-- 			cpp = { "clang-format" },
+	-- 			c = { "clang-format" },
+	-- 			css = { "prettierd", "prettier", stop_after_first = true },
+	-- 			html = { "prettierd", "prettier", stop_after_first = true },
+	-- 		},
+	-- 	})
+	-- end,
+	opts = {
+		formatters_by_ft = {
+			lua = { "stylua" },
+			python = { "isort", "black" },
+			rust = { "rustfmt", lsp_format = "fallback" },
+			javascript = { "prettierd", "prettier", stop_after_first = true },
+			typescript = { "prettierd", "prettier", stop_after_first = true },
+			javascriptreact = { "prettierd", "prettier", stop_after_first = true },
+			typescriptreact = { "prettierd", "prettier", stop_after_first = true },
+			cpp = { "clang-format" },
+			c = { "clang-format" },
+			css = { "prettierd", "prettier", stop_after_first = true },
+			html = { "prettierd", "prettier", stop_after_first = true },
+		},
+	},
 }
