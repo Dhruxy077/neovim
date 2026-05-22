@@ -13,7 +13,7 @@ return {
 			vim.keymap.set("n", "<leader>fc", function()
 				builtin.find_files({ cwd = utils.buffer_dir() })
 			end, { desc = "Find the files (current directory)" })
-			vim.keymap.set("n", "<leader>ff", builtin.live_grep, { desc = "Telescope live grep" })
+			vim.keymap.set("n", "<leader>ff", ":Telescope live_grep<CR>", { desc = "Telescope live grep" })
 			vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
 			vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
 		end,

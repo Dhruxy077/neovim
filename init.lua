@@ -62,7 +62,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 vim.g.lazyvim_picker = "telescope"
-
+vim.lsp.log.set_level(vim.log.levels.WARN)
 -- ONE single setup call for lazy.nvim
 require("lazy").setup({
 	spec = {

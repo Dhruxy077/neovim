@@ -10,7 +10,7 @@ return {
 
 	-- 2. This applies the comment string to Neovim's native commenting system or mini.comment
 	{
-		"echasnovski/mini.comment",
+		"nvim-mini/mini.comment",
 		event = "VeryLazy",
 		opts = {
 			options = {

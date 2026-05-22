@@ -156,7 +156,7 @@ return {
 
 			-- Keymaps
 			vim.keymap.set("n", "<leader>e", ":Neotree float toggle<CR>", { desc = "Neotree float" })
-			vim.keymap.set("n", "<leader>E", ":Neotree toggle<CR>", { desc = "Neotree toggle" })
+			-- vim.keymap.set("n", "<leader>E", ":Neotree focus toggle<CR>", { desc = "Neotree toggle" })
 
 			vim.keymap.set("n", "<leader>ge", function()
 				require("neo-tree.command").execute({ source = "git_status", toggle = true })

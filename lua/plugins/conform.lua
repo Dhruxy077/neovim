@@ -1,6 +1,6 @@
 return {
 	"stevearc/conform.nvim",
-	dependencies = { "williamboman/mason.nvim" }, -- Ensure Mason is loaded
+	dependencies = { "mason-org/mason.nvim" }, -- Ensure Mason is loaded
 	lazy = false,
 	cmd = "ConformInfo",
 	keys = {
